@@ -49,6 +49,7 @@ public class Principal {
 			}
 			
 		}while(opcao != 0);
+		ler.close();
 	}
 	
 	public static void main (String[] arg) {
@@ -65,10 +66,10 @@ public class Principal {
 		
 		System.out.print("Escreva o cpf");
 		String cpf = ler.next();
-		p1.setCpf(cpf);
-		
+		p1.setCpf(cpf);		
 		
 		exibirMenu();
+		ler.close();
 	}
 }
 	
